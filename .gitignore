@@ -3,6 +3,7 @@
 /log/*.log
 /tmp
 /config/database.yml
+/config/deploy.rb
 .sass-cache
 .DS_Store*
 *.swp
