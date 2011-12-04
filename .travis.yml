@@ -1,2 +1,2 @@
 rvm: 1.9.2
-before_script: "sh -c 'ln -s config/database.example.yml config/database.yml'"
+before_script: "sh -c 'cd config && cp database.example.yml database.yml'"
