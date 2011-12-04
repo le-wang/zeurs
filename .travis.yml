@@ -1,4 +1,6 @@
-rvm: 1.9.2
-bundler_args: "--without development production"
-before_script: "cp config/database.example.yml config/database.yml"
-script: "bundle exec rake db:migrate spec cucumber"
+rvm:
+  - 1.9.2
+
+before_script:
+  - cp cp config/database.example.yml config/database.yml config/database.yml
+  - bundle exec rake db:migrate
