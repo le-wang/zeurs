@@ -2,5 +2,5 @@ rvm: 1.9.2
 bundler_args: "--without development production"
 before_script:
   - "cp config/database.example.yml config/database.yml"
-  - "bundle exec rake db:create"
-  - "bundle exec rake db:schema:load"
+  - "bundle exec rake db:migrate"
+  - "bundle exec rake db:test:prepare"
