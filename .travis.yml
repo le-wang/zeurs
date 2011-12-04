@@ -1,5 +1,3 @@
-rvm:
-  - 1.9.2
-before_script:
-  - "sh -c 'cd config && cp database.example.yml database.yml'"
-  - "sh -c 'bundle exec rake db:migrate && bundle exec rake db:test:prepare'"
+rvm: 1.9.2
+bundler_args: "--without development production"
+before_script: "./config/ci/before-travis.sh"
